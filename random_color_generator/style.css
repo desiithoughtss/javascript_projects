@@ -1,0 +1,70 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 20px;
+  font-size: 20px;
+}
+
+.main-container {
+  display: flex;
+  gap: 10px;
+}
+.rgb-container,
+.hex-container {
+  min-height: 100vh;
+  flex: 1;
+}
+
+.hex-container button {
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(42, 180, 235);
+}
+
+.rgb-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.hex-container {
+  background-color: blue;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+.rgb-container {
+  background-color: blue;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hex-value {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.rgb-container button {
+  padding: 20px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 600;
+  background-color: rgb(42, 180, 235);
+}
+
+.rgb-value {
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
