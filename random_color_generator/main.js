@@ -1,3 +1,5 @@
+// hex container
+
 const bttn = document.querySelector(".hex-button");
 const hexColorValue = document.querySelector(".hex-value");
 const hexContainer = document.querySelector(".hex-container");
@@ -14,6 +16,14 @@ let createHexValue = () => {
 };
 
 bttn.addEventListener("click", createHexValue);
+
+// copy text
+function copyHexToClipboard() {
+  navigator.clipboard.writeText(hexColorValue.textContent);
+}
+hexCopy.addEventListener("click", copyHexToClipboard);
+
+// rgb container
 
 const rgbBttn = document.querySelector(".rgb-button");
 const getRedInputRange = document.querySelector("#red");
@@ -35,12 +45,7 @@ let createRgbValue = () => {
 
 rgbBttn.addEventListener("click", createRgbValue);
 
-// ------
-function copyHexToClipboard() {
-  navigator.clipboard.writeText(hexColorValue.textContent);
-}
-
-hexCopy.addEventListener("click", copyHexToClipboard);
+// copy text
 
 function copyrgbToClipboard() {
   navigator.clipboard.writeText(rgbColorValue.textContent);
